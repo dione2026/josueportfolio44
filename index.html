@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Josue Elijah Lapuz Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        /* ---------- GENERAL PAGE ---------- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/013/087/516/non_2x/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg');
+            background-size: cover;        
+            background-position: center;   
+            background-repeat: no-repeat;  
+            background-attachment: fixed;  
+            color: white;                  
+        }
+
+        /* ---------- MAIN HEADER / NAVIGATION ---------- */
+        .main-header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 30px;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .nav-links a {
+            color: #b78727 ;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* ---------- SECTIONS ---------- */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #b78727 
+        }
+
+        section p {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            color: #eeeeee;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* ---------- SKILLS BOXES ---------- */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill-box {
+            background-color: rgba(0, 0, 0, 0.151);
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        }
+
+        /* ---------- GALLERY BOXES ---------- */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-box {
+            background-color: rgba(0, 0, 0, 0.151);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-box img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-box:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        }
+
+        /* ---------- FAREWELL BOX ---------- */
+        .farewell {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            font-size: 22px;
+            border-radius: 12px;
+            margin: 40px 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .farewell:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 900px) {
+            .skills-container, .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .skills-container, .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MAIN HEADER WITH NAVIGATION -->
+    <div class="main-header">
+        <h1>Josue Elijah Lapuz</h1>
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#farewell">Farewell</a>
+        </div>
+    </div>
+
+    <!-- ABOUT ME / INTRODUCTION -->
+    <section id="about">
+        <h2>Introduction</h2>
+        <p>
+            Hi! My name is <strong>Josue Elijah Lapuz</strong>, currently a student in <strong>STEM 12 CSS</strong>.
+            I am constantly trying to learn and grow by challenging myself, improving my skills, 
+            and staying open to new experiences because <em>“I believe that growth begins the moment we decide to keep learning.”</em>
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Here are some of the skills I am proud of developing as a STEM student:</p>
+        <div class="skills-container">
+            <div class="skill-box">Knowledgeable – strong understanding of STEM concepts and technology</div>
+            <div class="skill-box">Programming & Coding – Python, HTML/CSS</div>
+            <div class="skill-box">Creativity & Innovation – Designing projects, creative solutions, experimenting with ideas</div>
+            <div class="skill-box">Collaboration & Communication – teamwork and presenting ideas clearly</div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Some photos taken during work immersion
+:</p>
+        <div class="gallery-container">
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.1&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056eddd636a1&disp=thd&attbid=ANGjdJ9POmfTqZcP_ZlPwNy7b6UHOQsvEL5ChVqTLtFianWLmXDzUgWuSSzanBu-YULSqy8SguXQjapVyffv25ZAYoIAbQV9KuhKJyYZz2uaAJccpNyzZOBVFliHP0A&ats=2524608000000&sz=w1912-h956&auditContext=forDisplay" alt="Project 1">
+            </div>
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.2&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056eca75e544&disp=thd&attbid=ANGjdJ_OBv-F_8w1pAHBiTBVa75NwxjvnSwMTRaCoQQnvJjYLEa0cnxXSNDffKVmti5YwuhsJrchm_yjSyV-jTsTeNLdj2MasJjv61st85oHNwzSHgYaC4AUXVPgmF0&ats=2524608000000&sz=w1912-h956&auditContext=prefetch" alt="Project 2">
+            </div>
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.3&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056ec9946d35&disp=thd&attbid=ANGjdJ965K9sJt5u4-eVnygsiYmT21F0gdo5uDaaWhqR5wZlBjAL1jKSAr4b8XOwqp7vMXTfYWPB0_LuKLIB4SVBo4g00eA-smRnN6VG3_wv_xBXBb3Wn-6esoiR9JA&ats=2524608000000&sz=w1912-h956&auditContext=prefetch  " alt="Project 3">
+            </div>
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.4&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056ec8b2f523&disp=thd&attbid=ANGjdJ8mGgVOxKkZzyC-JbnY6M1adwII2-GLLGbQRX6JNLj2VnBfEqVUADhW9TDT6X2nC4foIMCJBgdLl67vjq3Ni-9T-r46GGkN5hXNPoobHmAH6GGFtiQkKKS9CF0&ats=2524608000000&sz=w1912-h956&auditContext=prefetch" alt="Project 4">
+            </div>
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.5&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056edf9926c2&disp=thd&attbid=ANGjdJ8XnFoRvUVROAlbcwhcTkKJWqV1QRCTAmVySdrY9eoQZCkzyiOSHJapb0Z3Y-SE1XpmPN6Ok2BrrwH9ooktl0Z-SjQDZTdJNJdZ_yohDP7x3mIRmVZrSk--waA&ats=2524608000000&sz=w1912-h956&auditContext=prefetch" alt="Project 5">
+            </div>
+            <div class="gallery-box">
+                <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e6b1c3639d&attid=0.6&permmsgid=msg-f:1854985928504983527&th=19be3bdfb3e33fe7&view=fimg&realattid=19be3bdb056ec7d17d16&disp=thd&attbid=ANGjdJ-BhlNAX_LpLbUjKAMxdqAkF1B5i7Q5z2e8W-20KJNbAEisrEFPhcy-GWSfA1zq2o3zz8TZQiCKw2_TspcoH_NcE5hCAaL4_ieQqjoF4KYu0251GfIdYMI3Dic&ats=2524608000000&sz=w1912-h956&auditContext=prefetch" alt="Project 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAREWELL SECTION -->
+    <section id="farewell">
+        <div class="farewell">
+            Thank you for visiting my portfolio!<br>
+            I hope you enjoyed learning more about me . Keep learning, keep growing!
+        </div>
+    </section>
+
+</body>
+</html>
